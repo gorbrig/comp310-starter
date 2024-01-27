@@ -25,4 +25,30 @@ int main(){
     return 0;
 }
 
-void addMatrices(int a[Rows][Cols], int b[Rows][Cols], int results[Rows][Cols]);
+void addMatrices(int a[Rows][Cols], int b[Rows][Cols], int results[Rows][Cols]){
+for(int i = 0; i < Rows; i++){
+    for(int j = 0 j < Cols; j++){
+        results[i][j] = a[i][j] + b[i][j]
+        }
+    }
+}
+
+void multiplyMatrices(int a[Rows][Cols], int b[Rows][Cols], results[Rows][Cols]){
+for(int i = 0; i < Rows; i++){
+    for(int j = 0 j < Cols; j++){ 
+        results[i][j] = 0;
+        for(int k = 0; k<Cols; k++){
+            results[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+}
+void printMatrix(int matrix[Rows][Cols]){
+    for(int i = 0; i < Rows; i++){
+        for(int j = 0; j <Colsl j++){
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
